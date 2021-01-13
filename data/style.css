@@ -50,15 +50,34 @@
 
 .menu-vertical-2 {
     top: 130px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 20px;
     width: 120px !important;
+    height: calc(100% - 150px) !important;
+    position: fixed;
+    z-index: 10;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.menu-right-vertical {
+    top: 130px;
+    padding-top: 20px;
+    left: calc(100% - 180px);
+    width: 200px !important;
     height: calc(100% - 150px) !important;
     position: fixed;
     z-index: 100;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+@media screen and (max-width:890px) {
+    .menu-right-vertical {
+        display: none;
+    }
 }
 
 .menu-vertical-2::-webkit-scrollbar {
@@ -180,7 +199,7 @@
 }
 
 .info-float {
-    background-color: #c7fac0;
+    background-color: #B1FFA6;
     border-radius: 10px;
     padding: 10px;
     top: calc(100% - 67px) !important;
@@ -189,14 +208,33 @@
     width: 150px;
 }
 
+.main-container-2 {
+    padding-left: 190px;
+    padding-top: 90px;
+    padding-bottom: 45px;
+    padding-right: 180px;
+}
+
+.search-specific-navbar {
+    width: 100% !important;
+    position: fixed;
+    background-color: #fff;
+    z-index: 20;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 }
 .button-toggle {
-    border: none !important;
-    background: none !important;
+    outline: 0;
+    background: white !important;
+    border: none;
 }
 .button-toggle:focus {
     outline: 0;
+    background: white !important;
+    border: none;
 }
 .logo13-size {
     height: 110px;
@@ -238,6 +276,9 @@
     height: 30px;
     margin-left: 10px;
     cursor: pointer;
+}
+.button-search-2:focus {
+    outline: 0;
 }
 .form-search {
     color: grey !important;
