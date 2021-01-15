@@ -942,7 +942,6 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    padding-top: 10px;
 }
 
 .order-status::-webkit-scrollbar {
@@ -959,13 +958,25 @@
 }
 
 .button-status {
-    background-color: yellow !important;
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 5px;
+    color: black !important;
 }
 
 .img-setup-size {
     height: 35px;
     width: 35px;
+}
+
+.width-300 {
+    width: 300px;
+}
+
+.width-200 {
+    width: 200px;
+}
+
+.width-150 {
+    width: 150px;
 }
