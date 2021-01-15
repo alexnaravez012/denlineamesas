@@ -43,7 +43,7 @@
 .modal-add-products-order {
     border-radius: 30px;
     width: 1100px !important;
-    padding: 10px;
+    padding: 0px !important;
 }
 
 .modal-shadow {
@@ -230,7 +230,7 @@
 .main-container {
     top: 60px;
     width: calc(100%-250px);
-    margin-left: 270px;
+    margin-left: 250px;
     height: calc(100%-90px);
     z-index: 1;
     position: fixed;
@@ -324,18 +324,37 @@
     width: 100%;
     max-height: 260px !important;
     overflow: auto;
-    padding-left: 15px !important;
-    padding-bottom: 5px !important;
-    margin-top: 10px;
-    margin-bottom: 15px;
     z-index: 0;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .modal-order::-webkit-scrollbar {
     display: none;
+}
+
+.modal-total-shadow {
+    box-shadow: inset 0px 5px 13px -5px rgba(0, 0, 0, 0.45);
+    width: 100%;
+    padding-top: 20px;
+}
+
+.button-accept-modal {
+    background-color: #B1FFA6;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-accept-modal:focus {
+    outline: 0;
 }
 
 .info-float {
@@ -367,41 +386,47 @@
     padding-bottom: 10px;
 }
 
-
-}
 .button-toggle {
     outline: 0;
     background: white !important;
     border: none;
 }
+
 .button-toggle:focus {
     outline: 0;
     background: white !important;
     border: none;
 }
+
 .logo13-size {
     height: 110px;
     width: 70px;
 }
+
 .cursor-pointer {
     cursor: pointer;
 }
+
 .padding-horizontal-10 {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .padding-horizontal-20 {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .padding-vertical-10 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .padding-horizontal-5 {
     padding-right: 5px;
     padding-left: 5px;
 }
+
 .buttom-search {
     border-radius: 10px;
     padding-left: 25px;
@@ -410,6 +435,7 @@
     border: 1px solid #3a6193;
     font-size: 12px;
 }
+
 .buttom-search-2 {
     border-radius: 10px;
     color: grey;
@@ -420,44 +446,54 @@
     margin-left: 10px;
     cursor: pointer;
 }
+
 .button-search-2:focus {
     outline: 0;
 }
+
 .form-search {
     color: grey !important;
     border-bottom: 1px solid grey;
     font-size: 18px;
 }
+
 .form-search::placeholder {
     color: grey;
 }
+
 .height-80 {
     height: 80px !important;
 }
+
 .li:active {
     z-index: 10 !important;
     -webkit-box-shadow: 15px 0px 14px 0px rgba(0, 0, 0, 0.12) !important;
     -moz-box-shadow: 15px 0px 14px 0px rgba(0, 0, 0, 0.12) !important;
     box-shadow: 15px 0px 14px 0px rgba(0, 0, 0, 0.12) !important;
 }
+
 .shadow-box-right {
     -webkit-box-shadow: 15px 0px 14px 0px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 15px 0px 14px 0px rgba(0, 0, 0, 0.12);
     box-shadow: 15px 0px 14px 0px rgba(0, 0, 0, 0.12);
 }
+
 .list-tab {
     padding: 10px 10px 10px 20px;
     margin: 10px !important;
     color: rgb(54, 54, 54);
 }
+
 .list-tab:hover {
     background-color: rgb(185, 184, 184);
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+
 .hr-tab {
     border-bottom: 1px solid rgb(54, 54, 54);
 }
+
 .form-select {
     color: grey !important;
     border-bottom: 1px solid black;
@@ -468,10 +504,12 @@
     background-color: white;
     text-align: left;
 }
+
 .padding-horizontal-30 {
     padding-left: 30px !important;
     padding-right: 30px !important;
 }
+
 .item-list {
     background-color: white;
     font-size: 19px !important;
@@ -480,22 +518,28 @@
     padding-top: 4px !important;
     padding-bottom: 4px !important;
 }
+
 .item-list:hover {
     background-color: gray;
     color: white !important;
 }
+
 .font-size-17 {
     font-size: 17px;
 }
+
 .font-size-18 {
     font-size: 18px;
 }
+
 .font-size-15 {
     font-size: 15px;
 }
+
 .background-gray {
     background-color: #e9e9e9;
 }
+
 .buttom-tel {
     border: 1px solid gray;
     background-color: white;
@@ -503,17 +547,20 @@
     padding-top: 10px;
     width: 100%;
 }
+
 .buttom-tel-basket {
     background-color: #98FB98;
     padding-bottom: 10px;
     padding-top: 10px;
     width: 100%;
 }
+
 .button-menu {
     background-color: white;
     border: none;
     padding-right: 35px;
 }
+
 .select-items {
     position: absolute;
     top: 100%;
@@ -522,11 +569,13 @@
     z-index: 99;
     width: 300px !important;
 }
+
 .dropdown-buttom {
     border: none;
     background: none;
     width: 100%;
 }
+
 .buttom-search-cat {
     border-radius: 20px;
     border: 1px black solid;
@@ -536,35 +585,42 @@
     padding-right: 11px;
     margin-left: 9px;
 }
+
 .img-size-1 {
     width: 45px;
     height: 45px;
 }
+
 .hr-vertical {
     border-left: 1px solid black;
     height: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .background-green-buy {
     background-color: #98FB98;
     border-radius: 5px;
 }
+
 .text-img-buy {
     color: black;
     left: 34px;
     bottom: -10px;
 }
+
 .text-img-buy-2 {
     color: black;
     left: 25px;
     top: -25px;
 }
+
 .text-ventas-logo {
     color: #3a6193;
     left: 120px;
     top: 20px;
 }
+
 .img-items-products {
     height: 100px;
     width: 100px;
@@ -572,6 +628,7 @@
     background-position: 50%;
     background-size: 100% auto;
 }
+
 .img-items-products-add-120 {
     min-width: 120px;
     max-width: 120px;
@@ -581,6 +638,7 @@
     background-position: 50%;
     background-size: 100% auto;
 }
+
 .img-items-products-add-100 {
     min-width: 100px;
     max-width: 100px;
@@ -590,6 +648,7 @@
     background-position: 50%;
     background-size: 100% auto;
 }
+
 .img-items-products-add-80 {
     min-width: 70px;
     max-width: 70px;
@@ -599,6 +658,7 @@
     background-position: 50%;
     background-size: 100% auto;
 }
+
 .img-items-products-add-90 {
     min-width: 90px;
     max-width: 90px;
@@ -608,6 +668,7 @@
     background-position: 50%;
     background-size: 100% auto;
 }
+
 .card-products-add {
     width: 210px !important;
     min-width: 210px !important;
@@ -620,12 +681,14 @@
     padding-bottom: 15px !important;
     margin-right: 30px !important;
 }
+
 .like-size-card {
     height: 40px;
     width: 40px;
     left: 190px;
     top: 100px;
 }
+
 .button-discount-card {
     border-radius: 10px;
     background-color: rgb(0, 0, 102);
@@ -637,6 +700,7 @@
     padding-top: 1px;
     padding-bottom: 1px;
 }
+
 .button-card-add {
     border-radius: 10px;
     border: none;
@@ -644,26 +708,32 @@
     width: 60px;
     height: 20px;
 }
+
 .font-size-10 {
     font-size: 10px;
 }
+
 .font-size-9 {
     font-size: 9px;
 }
+
 .font-size-12 {
     font-size: 12px;
 }
+
 .buttom-add {
     border-radius: 10px;
     color: rgb(15, 121, 15);
     margin-left: 10px;
 }
+
 .like-size {
     top: 70px;
     left: 70px;
     height: 70px;
     width: 70px;
 }
+
 .discount {
     background-color: black;
     color: white;
@@ -673,6 +743,7 @@
     height: 20px;
     width: 50px;
 }
+
 .icon-close {
     background-color: #98FB98;
     font-size: 15px;
@@ -681,6 +752,7 @@
     border-radius: 50%;
     color: black;
 }
+
 .img-items-products-basket {
     min-width: 160px;
     max-width: 160px;
@@ -690,6 +762,7 @@
     background-position: 50%;
     background-size: 100% auto;
 }
+
 .discount-2 {
     background-color: black;
     color: white;
@@ -700,6 +773,7 @@
     width: 60px;
     font-size: 14px;
 }
+
 .icon-plus-minus {
     background-color: #0e700e;
     font-size: 20px;
@@ -708,6 +782,7 @@
     border-radius: 50%;
     color: white;
 }
+
 .background-menus {
     z-index: 300;
     position: absolute;
@@ -715,12 +790,15 @@
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
 }
+
 #user-button:active+.background-menus {
     display: block;
 }
+
 .show {
     display: block;
 }
+
 .style-menu-bars {
     background-color: white;
     margin-left: 90px;
@@ -730,12 +808,14 @@
     padding-right: 20px;
     padding-top: 20px;
 }
+
 .style-menu-users {
     background-color: white;
     margin-left: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .style-overflow-ventas {
     width: 100%;
     padding-top: 20px;
@@ -746,6 +826,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .style-menu-information {
     background-color: white;
     margin-left: 100px;
@@ -755,31 +836,38 @@
     padding-right: 20px;
     padding-top: 20px;
 }
+
 .items-menu {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
 .items-menu:hover {
     background-color: rgb(167, 238, 167);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 .img-menu-size {
     height: 45px;
     width: 50px;
 }
+
 .display-none {
     display: none;
 }
+
 .width-80 {
     width: 80px !important;
 }
+
 .border-list {
     border: black;
     border: 2px solid rgb(0, 0, 0);
     border-left: 100px;
     border-right: 100px;
 }
+
 .item-list {
     background-color: white;
     font-size: 12px;
@@ -788,10 +876,12 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 .item-list:hover {
     background-color: gray;
     color: white !important;
 }
+
 .buttom-radius-left {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -804,6 +894,7 @@
     padding-bottom: 8px;
     padding-top: 8px;
 }
+
 .buttom-radius-right {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -816,6 +907,7 @@
     padding-bottom: 8px;
     padding-top: 8px;
 }
+
 .buttom-green {
     border-radius: 10px;
     border: 1px solid gray;
@@ -823,18 +915,57 @@
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
 .lateral-menu {
     display: inline;
 }
+
 .dashboard-padding {
     padding-left: 600px;
     padding-top: 20px;
 }
+
 .productos-disable {
     width: 100%;
     display: none;
 }
+
 .button-select-img {
     background: none;
     border: none;
+}
+
+.order-status {
+    width: 100%;
+    max-height: 190px !important;
+    overflow: auto;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-top: 10px;
+}
+
+.order-status::-webkit-scrollbar {
+    display: none;
+}
+
+.order-status-nav {
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.20);
+    z-index: 0;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.button-status {
+    background-color: yellow !important;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.img-setup-size {
+    height: 35px;
+    width: 35px;
 }
