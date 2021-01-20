@@ -38,6 +38,7 @@
             <i class="fas fa-caret-down"></i>
         </div>
     </div>
+    <!--Menu vertical ERP-->
     <div style="position: relative;">
         <div class="menu-vertical">
             <ul class="uk-list" style="padding-bottom: 20px;">
@@ -490,28 +491,59 @@
         </div>
         <div style="display: none;">
             <div class="container-open-table" style="padding-top: 20px;">
-                <h5 class="color-blue uk-text-bold">Mesas</h5>
-                <div class="uk-flex uk-flex-middle cursor-pointer">
-                    <i class="fas fa-caret-left uk-margin-remove"></i>
-                    <h6 class="uk-text-light uk-margin-remove" style="padding-left: 10px;">Mesas/Mesa1</h6>
+                <div class="uk-flex uk-flex-between">
+                    <div class="uk-flex uk-flex-middle">
+                        <div class="uk-flex uk-flex-middle cursor-pointer">
+                            <i class="fas fa-caret-left uk-margin-remove color-blue"></i>
+                            <h6 class="uk-text-light uk-margin-remove color-blue uk-text-bold" style="padding-left: 10px;">Mesas/Mesa1</h6>
+                        </div>
+                    </div>
+                    <div style="margin-right: 20px;">
+                        <i class="fas fa-ellipsis-v cursor-pointer font-size-18" uk-toggle="#modal-procesos"></i>
+                        <div id="modal-procesos" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body modal-process-order">
+                                <div class="uk-flex uk-flex-center">
+                                    <h3 class="color-blue uk-text-bold">Procesos de pedido</h3>
+                                </div>
+                                <div class="uk-flex uk-flex-around">
+                                    <button uk-toggle="target: #modal-example" class="button-modal">Cancelar pedido</button>
+                                    <div id="modal-example" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body modal-process-order" style="width: 450px !important;">
+                                            <h3 class="uk-text-center color-blue uk-text-bold">Esta apunto de cancelar el pedido, ¿Esta seguro que quiere continuar?</h3>
+                                            <div class=" uk-flex uk-flex-center uk-flex-middle" style="margin-top: 10px;">
+                                                <h5 class="uk-margin-remove uk-text-bold" style="padding-right: 10px;">Motivos:</h5>
+                                                <select class="form-select " style="width: 300px !important; ">
+                                                    <option class="select-items " value=" ">Errores</option>
+                                                    <option class="select-items " value=" ">Errores</option>
+                                                    <option class="select-items " value=" ">Errores</option>
+                                                </select>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center" style="padding-top: 20px;">
+                                                <button class="button-modal uk-modal-close">Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-flex uk-flex-middle" style="padding-top: 20px;">
                     <h4 class="uk-text-bold uk-margin-remove" style="padding-bottom: 2px;">Mesa 1</h4>
-                    <h6 class="uk-margin-remove uk-text-bold" style="padding-left:20px ;">Tiempo: 27 minutos</h6>
-                    <h6 class="uk-margin-remove uk-text-bold" style="padding-left:20px ;">$0.00</h6>
+                    <h6 class="uk-margin-remove uk-text-bold" style="padding-left:20px;">Tiempo: 27 minutos</h6>
+                    <h6 class="uk-margin-remove uk-text-bold" style="padding-left:20px;">$0.00</h6>
+                    <h6 class="uk-margin-remove" style="padding-left:50px;"> <span class="uk-text-bold">Mesero:</span> Camilo de la cruz</h6>
+                    <h6 class="uk-margin-remove cursor-pointer uk-text-muted uk-text-bold font-size-12" style="padding-left:20px;">Cambiar mesero</h6>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-wrap" style="padding-top: 10px;">
-                    <div style="padding-top: 20px;">
-                        <h6 class="uk-margin-remove"> <span class="uk-text-bold">Mesero:</span> Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove cursor-pointer">Cambiar mesero</h6>
-                    </div>
-                    <div class="uk-flex" style="padding-left: 30px;">
-                        <h6 class="uk-margin-remove uk-text-bold">Documento tercero:</h6>
+                <div class="uk-flex uk-flex-middle uk-flex-wrap" style="padding-top: 30px;">
+                    <h6 class="uk-text-muted uk-margin-remove font-size-15" style="padding-right:10px;">Información del cliente</h6>
+                    <div class="uk-flex">
+                        <h6 class="uk-margin-remove uk-text-bold">Documento del cliente:</h6>
                         <input class="input-line" type="text">
                     </div>
                     <div class="uk-flex" style="padding-left: 30px;">
-                        <h6 class="uk-margin-remove uk-text-bold">Notas:</h6>
-                        <input class="input-line" type="text" style="width: 250px;">
+                        <h6 class="uk-margin-remove uk-text-bold">Notas del cliente:</h6>
+                        <input class="input-line" type="text" style="width: 300px;">
                     </div>
                 </div>
             </div>
@@ -519,11 +551,10 @@
                 <h5 class="uk-text-bold uk-margin-remove">Productos añadidos</h5>
                 <div style="padding-right: 30% ;">
                     <button class="button-add-product uk-text-bold">Agregar Producto</button>
-                    <button class="button-add-product uk-text-bold" style="background-color: #B3C3FF">Cancelar</button>
                 </div>
             </div>
         </div>
-        <div style="display: inline;">
+        <div style="display: none;">
             <div class="uk-flex uk-flex-middle uk-flex-wrap search-specific-navbar">
                 <i class="fas fa-caret-left uk-margin-remove color-blue cursor-pointer" style="padding-left: 30px;"></i>
                 <h6 class="color-blue uk-text-bold uk-margin-remove" style="padding-left: 30px;">Añadir pedido</h6>
@@ -535,16 +566,15 @@
                         <div class="modal-add-products uk-modal-dialog uk-modal-body">
                             <div class="uk-flex uk-flex-middle modal-shadow">
                                 <h4 class="uk-margin-remove uk-text-bold padding-horizontal-30">Añadir pedido</h4>
-                                <h4 class="uk-margin-remove uk-text-bold color-blue padding-horizontal-30" style="padding-left: 170px !important;">Pedido 1</h4>
+                                <h4 class="uk-margin-remove uk-text-bold color-blue padding-horizontal-30" style="padding-left: 310px !important;">Pedido 1</h4>
                                 <button class="uk-modal-close-default" style="margin-right: 10px; margin-top: 5px; " uk-close></button>
                             </div>
                             <div class="uk-flex uk-flex-middle uk-flex-center modal-shadow">
-                                <input type="text" class="modal-input-line" placeholder="Busqueda por nombre o código">
-                                <button class="uk-text-bold modal-buttons cursor-pointer" style="margin-left: 30px;">Buscar</button>
+                                <input type="text" class="modal-input-line" placeholder="Busqueda por nombre o código" style="width: 400px;">
                             </div>
                             <div class="uk-flex uk-flex-middle uk-flex-around modal-shadow">
-                                <h6 class="uk-margin-remove uk-text-bold uk-text-muted">Lista de productos</h6>
-                                <h6 class="uk-margin-remove uk-text-bold uk-text-muted">Productos seleccionados</h6>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-muted">Lista de productos</h5>
+                                <h5 class="uk-margin-remove uk-text-bold uk-text-muted">Productos seleccionados</h5>
                             </div>
                             <div class="uk-flex">
                                 <div class="uk-width-1-2">
@@ -581,34 +611,34 @@
                                 <div class="uk-width-1-2">
                                     <div class="modal-list-right">
                                         <div class="uk-flex uk-flex-around uk-flex-middle">
-                                            <h6 class="uk-margin-remove uk-text-bold font-size-12">Agua con gas - 4500108 - 15</h6>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-15">Agua con gas - 4500108 - 15</h6>
                                             <div>
                                                 <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
-                                                    <i class="fas fa-minus color-green font-size-18 cursor-pointer"></i>
-                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-18">1</h6>
-                                                    <i class="fas fa-plus color-green font-size-18 cursor-pointer"></i>
+                                                    <i class="fas fa-minus color-green font-size-20 cursor-pointer"></i>
+                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-20">1</h6>
+                                                    <i class="fas fa-plus color-green font-size-20 cursor-pointer"></i>
                                                 </div>
                                                 <h6 class="uk-margin-remove uk-text-center font-size-12 cursor-pointer">Quitar</h6>
                                             </div>
                                         </div>
                                         <div class="uk-flex uk-flex-around uk-flex-middle">
-                                            <h6 class="uk-margin-remove uk-text-bold font-size-12">Agua con gas - 4500108 - 15</h6>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-15">Agua con gas - 4500108 - 15</h6>
                                             <div>
                                                 <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
-                                                    <i class="fas fa-minus color-green font-size-18 cursor-pointer"></i>
-                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-18">1</h6>
-                                                    <i class="fas fa-plus color-green font-size-18 cursor-pointer"></i>
+                                                    <i class="fas fa-minus color-green font-size-20 cursor-pointer"></i>
+                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-20">1</h6>
+                                                    <i class="fas fa-plus color-green font-size-20 cursor-pointer"></i>
                                                 </div>
                                                 <h6 class="uk-margin-remove uk-text-center font-size-12 cursor-pointer">Quitar</h6>
                                             </div>
                                         </div>
                                         <div class="uk-flex uk-flex-around uk-flex-middle">
-                                            <h6 class="uk-margin-remove uk-text-bold font-size-12">Agua con gas - 4500108 - 15</h6>
+                                            <h6 class="uk-margin-remove uk-text-bold font-size-15">Agua con gas - 4500108 - 15</h6>
                                             <div>
                                                 <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
-                                                    <i class="fas fa-minus color-green font-size-18 cursor-pointer"></i>
-                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-18">1</h6>
-                                                    <i class="fas fa-plus color-green font-size-18 cursor-pointer"></i>
+                                                    <i class="fas fa-minus color-green font-size-20 cursor-pointer"></i>
+                                                    <h6 class="uk-margin-remove padding-horizontal-20 uk-text-bold color-green font-size-20">1</h6>
+                                                    <i class="fas fa-plus color-green font-size-20 cursor-pointer"></i>
                                                 </div>
                                                 <h6 class="uk-margin-remove uk-text-center font-size-12 cursor-pointer">Quitar</h6>
                                             </div>
@@ -616,7 +646,7 @@
                                     </div>
                                     <div class="uk-flex uk-flex-center">
                                         <button class="uk-text-bold modal-buttons cursor-pointer" style="margin-right: 10px;">Aceptar</button>
-                                        <button class="uk-text-bold modal-buttons cursor-pointer uk-modal-close">Cancelar</button>
+                                        <button class="uk-text-bold modal-buttons cursor-pointer uk-modal-close">Volver</button>
                                     </div>
                                 </div>
                             </div>
@@ -1276,12 +1306,16 @@
                                             </div>
                                         </div>
                                         <div class="modal-total-shadow">
-                                            <div class="uk-flex uk-flex-middle uk-flex-center">
-                                                <h3 class="uk-margin-remove uk-text-bold color-blue" style="padding-right: 5px;">Total:</h3>
-                                                <h4 class="uk-margin-remove font-weight-500">35.000$</h4>
+                                            <div class="uk-flex uk-flex-center uk-flex-middle">
+                                                <h3 class="uk-margin-remove uk-text-bold color-blue" style="padding-right: 5px;">Cantidad de productos:</h3>
+                                                <h4 class=" uk-margin-remove font-weight-500 ">2</h4>
                                             </div>
-                                            <div class="uk-flex uk-flex-center" style="padding-bottom: 20px; padding-top: 10px;">
-                                                <button class="button-accept-modal">Aceptar</button>
+                                            <div class=" uk-flex uk-flex-middle uk-flex-center ">
+                                                <h3 class="uk-margin-remove uk-text-bold color-blue " style="padding-right: 5px; ">Total:</h3>
+                                                <h4 class="uk-margin-remove font-weight-500 ">35.000$</h4>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center " style="padding-bottom: 20px; padding-top: 10px; ">
+                                                <button class="button-accept-modal ">Aceptar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1290,12 +1324,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="menu-right-vertical">
-                    <ul class="uk-list">
-                        <h6 class="uk-margon remove font-size-10 uk-text-bold">Productos relacionados con este artículo</h6>
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="img-items-menu-2 uk-margin-remove-bottom" style="background-image: url(./data/burguer.png);" uk-img></div>
-                            <h6 class="uk-margin-remove font-size-10" style="padding-left: 5px; ">Hamburguesa 2</h6>
+                <div class="menu-right-vertical ">
+                    <ul class="uk-list ">
+                        <h6 class="uk-margon remove font-size-10 uk-text-bold ">Productos relacionados con este artículo</h6>
+                        <div class="uk-flex uk-flex-middle ">
+                            <div class="img-items-menu-2 uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
+                            <h6 class="uk-margin-remove font-size-10 " style="padding-left: 5px; ">Hamburguesa 2</h6>
                         </div>
                         <div class="uk-flex uk-flex-middle ">
                             <div class="img-items-menu-2 uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
@@ -1313,30 +1347,61 @@
                 </div>
             </div>
         </div>
-        <div style="display: none;">
+        <div style="display: inline;">
             <div class="container-open-table" style="padding-top: 20px;">
-                <h5 class="color-blue uk-text-bold">Mesas</h5>
-                <div class="uk-flex uk-flex-middle cursor-pointer">
-                    <i class="fas fa-caret-left uk-margin-remove"></i>
-                    <h6 class="uk-text-light uk-margin-remove" style="padding-left: 10px;">Mesas/Mesa1</h6>
+                <div class="uk-flex uk-flex-between">
+                    <div class="uk-flex uk-flex-middle">
+                        <div class="uk-flex uk-flex-middle cursor-pointer">
+                            <i class="fas fa-caret-left uk-margin-remove color-blue"></i>
+                            <h6 class="uk-text-light uk-margin-remove color-blue uk-text-bold" style="padding-left: 10px;">Mesas/Mesa1</h6>
+                        </div>
+                    </div>
+                    <div style="margin-right: 20px;">
+                        <i class="fas fa-ellipsis-v cursor-pointer font-size-18" uk-toggle="#modal-procesos"></i>
+                        <div id="modal-procesos" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body modal-process-order">
+                                <div class="uk-flex uk-flex-center">
+                                    <h3 class="color-blue uk-text-bold">Procesos de pedido</h3>
+                                </div>
+                                <div class="uk-flex uk-flex-around">
+                                    <button uk-toggle="target: #modal-example" class="button-modal">Cancelar pedido</button>
+                                    <div id="modal-example" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body modal-process-order" style="width: 450px !important;">
+                                            <h3 class="uk-text-center color-blue uk-text-bold">Esta apunto de cancelar el pedido, ¿Esta seguro que quiere continuar?</h3>
+                                            <div class=" uk-flex uk-flex-center uk-flex-middle" style="margin-top: 10px;">
+                                                <h5 class="uk-margin-remove uk-text-bold" style="padding-right: 10px;">Motivos:</h5>
+                                                <select class="form-select " style="width: 300px !important; ">
+                                                    <option class="select-items " value=" ">Errores</option>
+                                                    <option class="select-items " value=" ">Errores</option>
+                                                    <option class="select-items " value=" ">Errores</option>
+                                                </select>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center" style="padding-top: 20px;">
+                                                <button class="button-modal uk-modal-close">Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-flex uk-flex-middle" style="padding-top: 20px;">
                     <h4 class="uk-text-bold uk-margin-remove" style="padding-bottom: 2px;">Mesa 1</h4>
-                    <h6 class="uk-margin-remove uk-text-bold" style="padding-left:20px ;">Tiempo: 27 minutos</h6>
-                    <h6 class="uk-margin-remove uk-text-bold" style="padding-left:20px ;">$0.00</h6>
+                    <h6 class="uk-margin-remove uk-text-bold" style="padding-left:20px;">Tiempo: 27 minutos</h6>
+                    <h6 class="uk-margin-remove uk-text-bold" style="padding-left:20px;">$0.00</h6>
+                    <h6 class="uk-margin-remove" style="padding-left:50px;"> <span class="uk-text-bold">Mesero:</span> Camilo de la cruz</h6>
+                    <h6 class="uk-margin-remove cursor-pointer uk-text-muted uk-text-bold font-size-12" style="padding-left:20px;">Cambiar mesero</h6>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-wrap" style="padding-top: 10px;">
-                    <div style="padding-top: 20px;">
-                        <h6 class="uk-margin-remove"> <span class="uk-text-bold">Mesero:</span> Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove cursor-pointer">Cambiar mesero</h6>
-                    </div>
-                    <div class="uk-flex" style="padding-left: 30px;">
-                        <h6 class="uk-margin-remove uk-text-bold">Documento tercero:</h6>
+                <div class="uk-flex uk-flex-middle uk-flex-wrap" style="padding-top: 30px;">
+                    <h6 class="uk-text-muted uk-margin-remove font-size-15" style="padding-right:10px;">Información del cliente</h6>
+                    <div class="uk-flex">
+                        <h6 class="uk-margin-remove uk-text-bold">Documento del cliente:</h6>
                         <input class="input-line" type="text">
                     </div>
                     <div class="uk-flex" style="padding-left: 30px;">
-                        <h6 class="uk-margin-remove uk-text-bold">Notas:</h6>
-                        <input class="input-line" type="text" style="width: 250px;">
+                        <h6 class="uk-margin-remove uk-text-bold">Notas del cliente:</h6>
+                        <input class="input-line" type="text" style="width: 300px;">
                     </div>
                 </div>
             </div>
@@ -1344,33 +1409,33 @@
                 <h5 class="uk-text-bold uk-margin-remove">Productos añadidos</h5>
                 <div style="padding-right: 30% ;">
                     <button class="button-add-product uk-text-bold">Agregar Producto</button>
-                    <button class="button-add-product uk-text-bold" style="background-color: #B3C3FF">Cancelar</button>
                 </div>
             </div>
-            <div class="order-status-nav">
-                <div class="uk-flex uk-flex-middle uk-flex-around padding-vertical-10">
-                    <h5 class="uk-margin-remove uk-text-bold color-blue width-300 uk-text-center">Producto</h5>
-                    <h5 class="uk-margin-remove uk-text-bold color-blue width-200 uk-text-center">Estado</h5>
-                    <h5 class="uk-margin-remove uk-text-bold color-blue width-150 uk-text-center"></h5>
-                    <h5 class="uk-margin-remove uk-text-bold color-blue width-150 uk-text-center"></h5>
-                    <h5 class="uk-margin-remove uk-text-bold color-blue width-150 uk-text-center"></h5>
+            <div class="order-status-nav ">
+                <div class="uk-flex uk-flex-middle uk-flex-around padding-vertical-10 ">
+                    <h5 class="uk-margin-remove uk-text-bold color-blue width-300 uk-text-center ">Producto</h5>
+                    <h5 class="uk-margin-remove uk-text-bold color-blue width-200 uk-text-center ">Estado</h5>
+                    <h5 class="uk-margin-remove uk-text-bold color-blue width-150 uk-text-center "></h5>
                 </div>
             </div>
-            <div class="button-status uk-margin-remove-vertical uk-padding-remove-vertical" style="margin-top:10px !important; background-color: #EB5E5E;" uk-alert>
-                <div class="uk-flex uk-flex-middle uk-flex-around">
-                    <h6 class=" uk-margin-remove uk-text-bold width-300 uk-text-center">6 Latas de aguila light 330cm</h6>
-                    <h6 class="uk-margin-remove uk-text-bold width-200 uk-text-center">CANCELADO</h6>
-                    <div class="width-150 uk-text-center">
-                        <img class="img-setup-size cursor-pointer" uk-toggle="target: #status-1" src="./data/setup.png " alt=" ">
+            <div class="button-status uk-margin-remove-vertical uk-padding-remove-vertical " style="margin-top:10px !important; background-color: #EB5E5E; " uk-alert>
+                <div class="uk-flex uk-flex-middle uk-flex-around ">
+                    <h6 class=" uk-margin-remove uk-text-bold width-300 uk-text-center ">6 Latas de aguila light 330cm</h6>
+                    <div class="uk-flex uk-flex-middle">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center ">CANCELADO</h6>
+                        <i class="far fa-play-circle font-size-18 cursor-pointer uk-text-center" style="padding-left: 10px;"></i>
+                    </div>
+                    <div class="width-150 uk-text-center ">
+                        <img class="img-setup-size cursor-pointer " uk-toggle="target: #status-1" src="./data/setup.png " alt=" ">
                         <div id="status-1" uk-modal>
-                            <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body" style="border-radius: 20px;">
-                                <div class="uk-width-1-1">
+                            <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body " style="border-radius: 20px; ">
+                                <div class="uk-width-1-1 ">
                                     <div>
-                                        <h4 class="uk-margin-remove color-blue uk-text-bold">Editar pedido</h4>
-                                        <h6 class="uk-margin-remove" style="padding-top: 5px;">2021-01-04 09:31:10</h6>
-                                        <h6 class="uk-margin-remove uk-text-bold" style="padding-top: 5px;">6 Latas de aguila light 330cm</h6>
+                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Editar pedido</h4>
+                                        <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        <h6 class="uk-margin-remove uk-text-bold " style="padding-top: 5px; ">6 Latas de aguila light 330cm</h6>
                                     </div>
-                                    <div class=" uk-flex uk-flex-middle" style="margin-top: 10px;">
+                                    <div class=" uk-flex uk-flex-middle " style="margin-top: 10px; ">
                                         <div>
                                             <select class="form-select " style="width: 70% !important; ">
                                             <option class="select-items " value=" ">En proceso</option>
@@ -1378,7 +1443,7 @@
                                             <option class="select-items " value=" ">Entregado a mesero</option>
                                         </select>
                                         </div>
-                                        <input class="input-line " placeholder="Notas " type="text " style="width: 150px;">
+                                        <input class="input-line " placeholder="Notas " type="text " style="width: 150px; ">
                                     </div>
                                 </div>
                                 <div class="uk-width-1-2 ">
@@ -1390,25 +1455,26 @@
                             </div>
                         </div>
                     </div>
-                    <i class="far fa-play-circle font-size-18 cursor-pointer width-150 uk-text-center "></i>
-                    <i class="fas fa-times cursor-pointer width-150 uk-text-center "></i>
                 </div>
             </div>
-            <div class="button-status uk-margin-remove-vertical uk-padding-remove-vertical " style="margin-top:3px !important; background-color:#F59E47; " uk-alert>
+            <div class="button-status uk-margin-remove-vertical uk-padding-remove-vertical " style="margin-top:10px !important; background-color: #F59E47; " uk-alert>
                 <div class="uk-flex uk-flex-middle uk-flex-around ">
                     <h6 class=" uk-margin-remove uk-text-bold width-300 uk-text-center ">Cerveza lata poker x473 ml</h6>
-                    <h6 class="uk-margin-remove uk-text-bold width-200 uk-text-center ">Entregado a mesero</h6>
+                    <div class="uk-flex uk-flex-middle">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center ">CANCELADO</h6>
+                        <i class="far fa-play-circle font-size-18 cursor-pointer uk-text-center" style="padding-left: 10px;"></i>
+                    </div>
                     <div class="width-150 uk-text-center ">
                         <img class="img-setup-size cursor-pointer " uk-toggle="target: #status-2" src="./data/setup.png " alt=" ">
                         <div id="status-2" uk-modal>
-                            <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body" style="border-radius: 20px;">
-                                <div class="uk-width-1-1">
+                            <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body " style="border-radius: 20px; ">
+                                <div class="uk-width-1-1 ">
                                     <div>
-                                        <h4 class="uk-margin-remove color-blue uk-text-bold">Editar pedido</h4>
-                                        <h6 class="uk-margin-remove" style="padding-top: 5px;">2021-01-04 09:31:10</h6>
-                                        <h6 class="uk-margin-remove uk-text-bold" style="padding-top: 5px;">Cerveza lata poker x473 ml</h6>
+                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Editar pedido</h4>
+                                        <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        <h6 class="uk-margin-remove uk-text-bold " style="padding-top: 5px; ">Cerveza lata poker x473 ml</h6>
                                     </div>
-                                    <div class=" uk-flex uk-flex-middle" style="margin-top: 10px;">
+                                    <div class=" uk-flex uk-flex-middle " style="margin-top: 10px; ">
                                         <div>
                                             <select class="form-select " style="width: 70% !important; ">
                                             <option class="select-items " value=" ">En proceso</option>
@@ -1416,7 +1482,7 @@
                                             <option class="select-items " value=" ">Entregado a mesero</option>
                                         </select>
                                         </div>
-                                        <input class="input-line " placeholder="Notas " type="text " style="width: 150px;">
+                                        <input class="input-line " placeholder="Notas " type="text " style="width: 150px; ">
                                     </div>
                                 </div>
                                 <div class="uk-width-1-2 ">
@@ -1428,25 +1494,26 @@
                             </div>
                         </div>
                     </div>
-                    <i class="far fa-play-circle font-size-18 cursor-pointer width-150 uk-text-center "></i>
-                    <i class="fas fa-times cursor-pointer width-150 uk-text-center "></i>
                 </div>
             </div>
-            <div class="button-status uk-margin-remove-vertical uk-padding-remove-vertical " style="margin-top:3px !important; background-color: #EBEB5E; " uk-alert>
+            <div class="button-status uk-margin-remove-vertical uk-padding-remove-vertical " style="margin-top:10px !important; background-color: #EBEB5E; " uk-alert>
                 <div class="uk-flex uk-flex-middle uk-flex-around ">
                     <h6 class=" uk-margin-remove uk-text-bold width-300 uk-text-center ">Cerveza lata poker x473 ml</h6>
-                    <h6 class="uk-margin-remove uk-text-bold width-200 uk-text-center ">En proceso</h6>
+                    <div class="uk-flex uk-flex-middle">
+                        <h6 class="uk-margin-remove uk-text-bold uk-text-center ">CANCELADO</h6>
+                        <i class="far fa-play-circle font-size-18 cursor-pointer uk-text-center" style="padding-left: 10px;"></i>
+                    </div>
                     <div class="width-150 uk-text-center ">
-                        <img class="img-setup-size cursor-pointer" uk-toggle="target: #status-3" src="./data/setup.png " alt=" ">
+                        <img class="img-setup-size cursor-pointer " uk-toggle="target: #status-3" src="./data/setup.png " alt=" ">
                         <div id="status-3" uk-modal>
-                            <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body" style="border-radius: 20px;">
-                                <div class="uk-width-1-1">
+                            <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body " style="border-radius: 20px; ">
+                                <div class="uk-width-1-1 ">
                                     <div>
-                                        <h4 class="uk-margin-remove color-blue uk-text-bold">Editar pedido</h4>
-                                        <h6 class="uk-margin-remove" style="padding-top: 5px;">2021-01-04 09:31:10</h6>
-                                        <h6 class="uk-margin-remove uk-text-bold" style="padding-top: 5px;">Cerveza lata poker x473 ml</h6>
+                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Editar pedido</h4>
+                                        <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        <h6 class="uk-margin-remove uk-text-bold " style="padding-top: 5px; ">Cerveza lata poker x473 ml</h6>
                                     </div>
-                                    <div class=" uk-flex uk-flex-middle" style="margin-top: 10px;">
+                                    <div class=" uk-flex uk-flex-middle " style="margin-top: 10px; ">
                                         <div>
                                             <select class="form-select " style="width: 70% !important; ">
                                             <option class="select-items " value=" ">En proceso</option>
@@ -1454,7 +1521,7 @@
                                             <option class="select-items " value=" ">Entregado a mesero</option>
                                         </select>
                                         </div>
-                                        <input class="input-line " placeholder="Notas " type="text " style="width: 150px;">
+                                        <input class="input-line " placeholder="Notas " type="text " style="width: 150px; ">
                                     </div>
                                 </div>
                                 <div class="uk-width-1-2 ">
@@ -1466,8 +1533,6 @@
                             </div>
                         </div>
                     </div>
-                    <i class="far fa-play-circle font-size-18 cursor-pointer width-150 uk-text-center "></i>
-                    <i class="fas fa-times cursor-pointer width-150 uk-text-center "></i>
                 </div>
             </div>
         </div>
