@@ -991,3 +991,44 @@
 .font-size-20 {
     font-size: 20px;
 }
+
+.color-yellow-star {
+    color: #E69D2F;
+}
+
+.size-shopping-cart {
+    height: 35px;
+    width: 35px;
+}
+
+.box-yellow {
+    background-color: #F1E380;
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+.size-img-galery {
+    width: 350px;
+    height: 350px;
+}
+
+.img-related-posts {
+    min-width: 80px;
+    max-width: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+}
+
+.info-float-galery {
+    background-color: #B1FFA6;
+    border-radius: 10px;
+    padding: 10px;
+    top: calc(100% - 67px) !important;
+    left: calc(50% - 5px);
+    position: fixed !important;
+    width: 150px;
+}
