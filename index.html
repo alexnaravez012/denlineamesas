@@ -506,8 +506,8 @@
                                     <h3 class="color-blue uk-text-bold">Procesos de pedido</h3>
                                 </div>
                                 <div class="uk-flex uk-flex-around">
-                                    <button uk-toggle="target: #modal-example" class="button-modal">Cancelar pedido</button>
-                                    <div id="modal-example" uk-modal>
+                                    <button uk-toggle="target: #modal-cancel-order" class="button-modal">Cancelar pedido</button>
+                                    <div id="modal-cancel-order" uk-modal>
                                         <div class="uk-modal-dialog uk-modal-body modal-process-order" style="width: 450px !important;">
                                             <h3 class="uk-text-center color-blue uk-text-bold">Esta apunto de cancelar el pedido, ¿Esta seguro que quiere continuar?</h3>
                                             <div class=" uk-flex uk-flex-center uk-flex-middle" style="margin-top: 10px;">
@@ -1348,6 +1348,9 @@
             </div>
         </div>
         <div style="display: inline;">
+
+        </div>
+        <div style="display: none;">
             <div class="container-open-table" style="padding-top: 20px;">
                 <div class="uk-flex uk-flex-between">
                     <div class="uk-flex uk-flex-middle">
@@ -1431,8 +1434,11 @@
                             <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body " style="border-radius: 20px; ">
                                 <div class="uk-width-1-1 ">
                                     <div>
-                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Editar pedido</h4>
-                                        <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Cambiar estado de producto</h4>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <h6 class="uk-text-bold uk-margin-remove" style="padding-right:5px ;">Fecha de pedido:</h6>
+                                            <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        </div>
                                         <h6 class="uk-margin-remove uk-text-bold " style="padding-top: 5px; ">6 Latas de aguila light 330cm</h6>
                                     </div>
                                     <div class=" uk-flex uk-flex-middle " style="margin-top: 10px; ">
@@ -1449,7 +1455,32 @@
                                 <div class="uk-width-1-2 ">
                                     <div class="uk-flex uk-flex-column ">
                                         <button class="button-modal cursor-pointer uk-text-bold ">Aceptar</button>
-                                        <button class="button-modal uk-modal-close cursor-pointer uk-text-bold " style="margin-top: 10px; ">Cancelar</button>
+                                        <button class="button-modal uk-modal-close cursor-pointer uk-text-bold " style="margin-top: 10px; " uk-toggle="target: #modal-cancel-product-1">Eliminar producto</button>
+                                        <div id="modal-cancel-product-1" uk-modal>
+                                            <div class="uk-modal-dialog uk-modal-body modal-process-order" style="width: 450px !important;">
+                                                <h4 class="uk-text-center color-blue uk-text-bold">¿Esta seguro de eliminar este producto del pedido?</h4>
+                                                <h6 class="uk-margin-remove uk-text-bold ">6 Latas de aguila light 330cm</h6>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-text-bold uk-margin-remove" style="padding-right:5px ;">Fecha de pedido:</h6>
+                                                    <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                                </div>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove uk-text-bold" style="padding-right: 5px;">Motivos:</h6>
+                                                    <select class="form-select  font-size-15" style="width: 180px !important; ">
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                    </select>
+                                                </div>
+                                                <div class="uk-flex uk-flex-center">
+                                                    <input class="input-line font-size-15 uk-text-center" placeholder="Observaciones" type="text " style="width: 350px; padding-top: 10px;">
+                                                </div>
+                                                <div class="uk-flex uk-flex-center uk-flex-around" style="padding-top: 20px;">
+                                                    <button class="button-modal">Aceptar</button>
+                                                    <button class="button-modal uk-modal-close">Cancelar</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1470,8 +1501,11 @@
                             <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body " style="border-radius: 20px; ">
                                 <div class="uk-width-1-1 ">
                                     <div>
-                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Editar pedido</h4>
-                                        <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Cambiar estado de producto</h4>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <h6 class="uk-text-bold uk-margin-remove" style="padding-right:5px ;">Fecha de pedido:</h6>
+                                            <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        </div>
                                         <h6 class="uk-margin-remove uk-text-bold " style="padding-top: 5px; ">Cerveza lata poker x473 ml</h6>
                                     </div>
                                     <div class=" uk-flex uk-flex-middle " style="margin-top: 10px; ">
@@ -1488,7 +1522,32 @@
                                 <div class="uk-width-1-2 ">
                                     <div class="uk-flex uk-flex-column ">
                                         <button class="button-modal cursor-pointer uk-text-bold ">Aceptar</button>
-                                        <button class="button-modal uk-modal-close cursor-pointer uk-text-bold " style="margin-top: 10px; ">Cancelar</button>
+                                        <button class="button-modal uk-modal-close cursor-pointer uk-text-bold " style="margin-top: 10px; " uk-toggle="target: #modal-cancel-product-2">Eliminar producto</button>
+                                        <div id="modal-cancel-product-2" uk-modal>
+                                            <div class="uk-modal-dialog uk-modal-body modal-process-order" style="width: 450px !important;">
+                                                <h4 class="uk-text-center color-blue uk-text-bold">¿Esta seguro de eliminar este producto del pedido?</h4>
+                                                <h6 class="uk-margin-remove uk-text-bold ">Cerveza lata poker x473 ml</h6>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-text-bold uk-margin-remove" style="padding-right:5px ;">Fecha de pedido:</h6>
+                                                    <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                                </div>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove uk-text-bold" style="padding-right: 5px;">Motivos:</h6>
+                                                    <select class="form-select  font-size-15" style="width: 180px !important; ">
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                    </select>
+                                                </div>
+                                                <div class="uk-flex uk-flex-center">
+                                                    <input class="input-line font-size-15 uk-text-center" placeholder="Observaciones" type="text " style="width: 350px; padding-top: 10px;">
+                                                </div>
+                                                <div class="uk-flex uk-flex-center uk-flex-around" style="padding-top: 20px;">
+                                                    <button class="button-modal">Aceptar</button>
+                                                    <button class="button-modal uk-modal-close">Cancelar</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1509,8 +1568,11 @@
                             <div class="uk-flex uk-flex-middle uk-modal-dialog uk-modal-body " style="border-radius: 20px; ">
                                 <div class="uk-width-1-1 ">
                                     <div>
-                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Editar pedido</h4>
-                                        <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        <h4 class="uk-margin-remove color-blue uk-text-bold ">Cambiar estado de producto</h4>
+                                        <div class="uk-flex uk-flex-middle">
+                                            <h6 class="uk-text-bold uk-margin-remove" style="padding-right:5px ;">Fecha de pedido:</h6>
+                                            <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                        </div>
                                         <h6 class="uk-margin-remove uk-text-bold " style="padding-top: 5px; ">Cerveza lata poker x473 ml</h6>
                                     </div>
                                     <div class=" uk-flex uk-flex-middle " style="margin-top: 10px; ">
@@ -1521,13 +1583,38 @@
                                             <option class="select-items " value=" ">Entregado a mesero</option>
                                         </select>
                                         </div>
-                                        <input class="input-line " placeholder="Notas " type="text " style="width: 150px; ">
+                                        <input class="input-line font-size-15" placeholder="Notas " type="text " style="width: 150px; ">
                                     </div>
                                 </div>
                                 <div class="uk-width-1-2 ">
                                     <div class="uk-flex uk-flex-column ">
                                         <button class="button-modal cursor-pointer uk-text-bold ">Aceptar</button>
-                                        <button class="button-modal uk-modal-close cursor-pointer uk-text-bold " style="margin-top: 10px; ">Cancelar</button>
+                                        <button class="button-modal uk-modal-close cursor-pointer uk-text-bold " style="margin-top: 10px; " uk-toggle="target: #modal-cancel-product-3">Eliminar producto</button>
+                                        <div id="modal-cancel-product-3" uk-modal>
+                                            <div class="uk-modal-dialog uk-modal-body modal-process-order" style="width: 450px !important;">
+                                                <h4 class="uk-text-center color-blue uk-text-bold">¿Esta seguro de eliminar este producto del pedido?</h4>
+                                                <h6 class="uk-margin-remove uk-text-bold ">Cerveza lata poker x473 ml</h6>
+                                                <div class="uk-flex uk-flex-middle">
+                                                    <h6 class="uk-text-bold uk-margin-remove" style="padding-right:5px ;">Fecha de pedido:</h6>
+                                                    <h6 class="uk-margin-remove " style="padding-top: 5px; ">2021-01-04 09:31:10</h6>
+                                                </div>
+                                                <div class=" uk-flex uk-flex-middle">
+                                                    <h6 class="uk-margin-remove uk-text-bold" style="padding-right: 5px;">Motivos:</h6>
+                                                    <select class="form-select  font-size-15" style="width: 180px !important; ">
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                        <option class="select-items " value=" ">Errores</option>
+                                                    </select>
+                                                </div>
+                                                <div class="uk-flex uk-flex-center">
+                                                    <input class="input-line font-size-15 uk-text-center" placeholder="Observaciones" type="text " style="width: 350px; padding-top: 10px;">
+                                                </div>
+                                                <div class="uk-flex uk-flex-center uk-flex-around" style="padding-top: 20px;">
+                                                    <button class="button-modal">Aceptar</button>
+                                                    <button class="button-modal uk-modal-close">Cancelar</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
