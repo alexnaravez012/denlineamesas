@@ -148,6 +148,7 @@
 }
 
 .menu-vertical {
+    background-color: white;
     top: 80px;
     padding-top: 20px;
     padding-left: 20px;
@@ -159,6 +160,7 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    display: none;
 }
 
 .menu-vertical::-webkit-scrollbar {
@@ -166,16 +168,18 @@
 }
 
 .menu-vertical-2 {
-    top: 130px;
-    padding-top: 30px;
-    padding-left: 20px;
-    width: 120px !important;
-    height: calc(100% - 150px) !important;
+    top: 80px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100px !important;
+    height: calc(100% - 80px) !important;
     position: fixed;
-    z-index: 10;
+    z-index: 30;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    background-color: white;
 }
 
 .menu-right-vertical {
@@ -229,8 +233,7 @@
 
 .main-container {
     top: 60px;
-    width: calc(100%-250px);
-    margin-left: 250px;
+    width: 100% !important;
     height: calc(100%-90px);
     z-index: 1;
     position: fixed;
@@ -244,7 +247,10 @@
 
 .width-menu {
     width: calc(100%-100px) !important;
-    margin-left: 100px !important;
+}
+
+.width-menu-vertical {
+    width: calc(100%-250px) !important;
 }
 
 .card-table {
@@ -298,7 +304,7 @@
 }
 
 .modal-card {
-    width: 300px !important;
+    width: 350px !important;
     height: auto;
     border-radius: 10px;
 }
@@ -364,9 +370,9 @@
     border-radius: 10px;
     padding: 10px;
     top: calc(100% - 67px) !important;
-    left: calc(50% - 40px);
     position: fixed !important;
-    width: 150px;
+    width: 150px !important;
+    left: calc(50% - 75px) !important;
 }
 
 .main-container-2 {
@@ -380,12 +386,13 @@
 }
 
 .search-specific-navbar {
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.10);
     width: 100% !important;
     position: fixed;
     background-color: #fff;
-    z-index: 20;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    z-index: 10;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .button-toggle {
@@ -1028,7 +1035,7 @@
     border-radius: 10px;
     padding: 10px;
     top: calc(100% - 67px) !important;
-    left: calc(50% - 5px);
+    left: calc(50% - 75px);
     position: fixed !important;
     width: 150px;
 }

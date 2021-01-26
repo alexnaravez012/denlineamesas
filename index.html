@@ -15,6 +15,9 @@
 <body>
     <!--Navbar-->
     <div class="uk-flex uk-flex-middle padding-horizontal-10 navbar">
+        <div uk-toggle="target: .menu-vertical; cls: show">
+            <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container; cls: width-menu-vertical"></i>
+        </div>
         <img src="./data/logo1.png" class="cursor-pointer logo1-size" alt="">
         <div class="cursor-pointer uk-inline uk-flex uk-flex-middle uk-width-1-2">
             <img class="logo-user-size" style="margin-right: 5px;" src="./data/user.png " alt=" ">
@@ -49,7 +52,7 @@
                         <h4 id="hide-text" class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
                     </div>
                     <div style="padding-right: 10px; padding-top: 4px;">
-                        <div uk-toggle="target: .menu-vertical; cls: width-80">
+                        <!-- <div uk-toggle="target: .menu-vertical; cls: width-80">
                             <div uk-toggle="target: .toggle">
                                 <div uk-toggle="target: .main-container; cls: width-menu">
                                     <button class="button-toggle cursor-pointer" uk-toggle="target: #hide-text; cls: display-none">
@@ -58,6 +61,9 @@
                                     </button>
                                 </div>
                             </div>
+                        </div> -->
+                        <div uk-toggle="target: .menu-vertical; cls: show" style="margin-right: 10px;">
+                            <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
                         </div>
                     </div>
                 </div>
@@ -106,7 +112,7 @@
     </div>
     <div class="main-container">
         <!--Mesas-->
-        <div style="display: none;">
+        <div style="display: inline;">
             <h5 class="color-blue uk-text-bold padding-horizontal-30" style="padding-top: 20px;">Mesas</h5>
             <div class="uk-child-width-1-5@m uk-grid-small uk-grid-match padding-horizontal-30" uk-grid>
                 <div>
@@ -559,7 +565,7 @@
         </div>
         <!--Agregar producto-->
         <div style="display: none;">
-            <div class="uk-flex uk-flex-middle uk-flex-wrap search-specific-navbar">
+            <div class="uk-flex uk-flex-middle uk-flex-center uk-flex-wrap search-specific-navbar">
                 <i class="fas fa-caret-left uk-margin-remove color-blue cursor-pointer" style="padding-left: 30px;"></i>
                 <h6 class="color-blue uk-text-bold uk-margin-remove" style="padding-left: 30px;">Añadir pedido</h6>
                 <h6 class="uk-margin-remove uk-text-light" style="padding-left: 30px;">LaFerra/Mesas/Mesa1/Añadir Pedido</h6>
@@ -662,31 +668,32 @@
                     </a>
                 </div>
             </div>
+            <!-- menu categorias vertical -->
             <div class="menu-vertical-2">
                 <ul class="uk-list">
                     <button class="button-items-menu-2">
-                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/burguer.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Hamburguesas</h6>
+                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-08.png);" uk-img></div>
+                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Comida</h6>
                     </button>
                     <button class="button-items-menu-2">
-                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/burguer.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Pizzas</h6>
+                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-09.png);" uk-img></div>
+                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios</h6>
                     </button>
                     <button class="button-items-menu-2">
-                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/burguer.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Emparedados</h6>
+                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-10.png);" uk-img></div>
+                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Aceites</h6>
                     </button>
                     <button class="button-items-menu-2">
-                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/burguer.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Perros</h6>
+                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-11.png);" uk-img></div>
+                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Bicicletas</h6>
                     </button>
                     <button class="button-items-menu-2">
-                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/burguer.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Bebidas</h6>
+                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-12.png);" uk-img></div>
+                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Motores</h6>
                     </button>
                     <button class="button-items-menu-2">
-                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/burguer.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Postres</h6>
+                        <div class="img-items-menu-2 uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-14.png);" uk-img></div>
+                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios de motocicletas</h6>
                     </button>
                 </ul>
             </div>
@@ -1352,7 +1359,7 @@
             </div>
         </div>
         <!--Galeria-->
-        <div style="display: inline;">
+        <div style="display: none;">
             <div class="uk-flex uk-flex-around uk-flex-wrap" style="padding-top: 40px;">
                 <div class="uk-width-1-5" style="min-width: 300px !important;">
                     <div class="uk-flex">
@@ -1387,7 +1394,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-3" style="min-width: 300px !important;">
+                <div class="uk-width-1-4" style="min-width: 300px !important;">
                     <img class="size-img-galery" src="./data/burguer2.png" alt="">
                     <div class="uk-flex uk-flex-middle" style="padding-top: 20px;">
                         <div>
