@@ -386,7 +386,7 @@
 }
 
 .search-specific-navbar {
-    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.10);
+    border-bottom: 1px solid rgb(212, 212, 212);
     width: 100% !important;
     position: fixed;
     background-color: #fff;

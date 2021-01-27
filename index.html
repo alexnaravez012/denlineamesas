@@ -52,6 +52,8 @@
                         <h4 id="hide-text" class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
                     </div>
                     <div style="padding-right: 10px; padding-top: 4px;">
+                        <!-- opcion para que el menu se despliegue -->
+
                         <!-- <div uk-toggle="target: .menu-vertical; cls: width-80">
                             <div uk-toggle="target: .toggle">
                                 <div uk-toggle="target: .main-container; cls: width-menu">
@@ -112,7 +114,7 @@
     </div>
     <div class="main-container">
         <!--Mesas-->
-        <div style="display: inline;">
+        <div style="display: none;">
             <h5 class="color-blue uk-text-bold padding-horizontal-30" style="padding-top: 20px;">Mesas</h5>
             <div class="uk-child-width-1-5@m uk-grid-small uk-grid-match padding-horizontal-30" uk-grid>
                 <div>
@@ -564,14 +566,14 @@
             </div>
         </div>
         <!--Agregar producto-->
-        <div style="display: none;">
-            <div class="uk-flex uk-flex-middle uk-flex-center uk-flex-wrap search-specific-navbar">
-                <i class="fas fa-caret-left uk-margin-remove color-blue cursor-pointer" style="padding-left: 30px;"></i>
-                <h6 class="color-blue uk-text-bold uk-margin-remove" style="padding-left: 30px;">Añadir pedido</h6>
-                <h6 class="uk-margin-remove uk-text-light" style="padding-left: 30px;">LaFerra/Mesas/Mesa1/Añadir Pedido</h6>
-                <div style="padding-left: 20px;" class="uk-flex uk-flex-between uk-flex-middle">
+        <div style="display: inline;">
+            <div class="uk-flex uk-flex-middle uk-flex-wrap search-specific-navbar" style="padding-left: 180px;">
+                <i class="fas fa-caret-left uk-margin-remove color-blue cursor-pointer"></i>
+                <h6 class="color-blue uk-text-bold uk-margin-remove" style="padding-left: 10px;">Añadir pedido</h6>
+                <h6 class="uk-margin-remove uk-text-light" style="padding-left: 130px;">LaFerra/Mesas/Mesa1/Añadir Pedido</h6>
+                <div style="padding-left: 10px;" class="uk-flex uk-flex-between uk-flex-middle">
                     <input class="input-line uk-text-center" style="width: 200px;" type="text" placeholder="Busqueda por nombre o código">
-                    <button class="buttom-search-2 uk-text-bold" uk-toggle="target: #modal-search-specific">Busqueda por lista</button>
+                    <button class="buttom-search-2 uk-text-bold" uk-toggle="target: #modal-search-specific" style="margin-left: 30px;">Busqueda por lista</button>
                     <div id="modal-search-specific" uk-modal>
                         <div class="modal-add-products uk-modal-dialog uk-modal-body">
                             <div class="uk-flex uk-flex-middle modal-shadow">
@@ -662,7 +664,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="padding-horizontal-10 " style="position: relative; " href=" " uk-toggle="target: #modal-order">
+                    <a class="padding-horizontal-10 " style="position: relative; margin-left: 135px;" href=" " uk-toggle="target: #modal-order">
                         <img class="img-size-1 " src="./data/Carrito-de-compras.png " alt=" " uk-img>
                         <h6 class="text-img-buy-2" style="position: absolute; ">0</h6>
                     </a>
