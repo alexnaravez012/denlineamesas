@@ -1039,3 +1039,18 @@
     position: fixed !important;
     width: 150px;
 }
+
+.button-data-user {
+    border: none;
+    background-color: white;
+}
+
+.button-data-user:focus {
+    outline: none;
+}
+
+.drop-data-user {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px !important;
+}
