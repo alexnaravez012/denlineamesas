@@ -1066,8 +1066,7 @@
     direction: rtl;
     overflow: scroll;
     overflow-x: hidden!important;
-    margin-left: 280px;
-    position: absolute;
+    margin-right: 20px;
 }
 
 .menu-vertical-galery::-webkit-scrollbar {
@@ -1087,11 +1086,11 @@
 }
 
 .menu-vertical-galery::-webkit-scrollbar-thumb:hover {
-    background: #ffffff;
+    background: #b9b9b9;
 }
 
 .menu-vertical-galery::-webkit-scrollbar-thumb:active {
-    background: #000000;
+    background: #b8b8b8;
 }
 
 .menu-vertical-galery::-webkit-scrollbar-track {
@@ -1101,11 +1100,11 @@
 }
 
 .menu-vertical-galery::-webkit-scrollbar-track:hover {
-    background: #666666;
+    background: #ffffff;
 }
 
 .menu-vertical-galery::-webkit-scrollbar-track:active {
-    background: #333333;
+    background: #f1f1f1;
 }
 
 .menu-vertical-galery::-webkit-scrollbar-corner {
@@ -1120,8 +1119,10 @@
     border-radius: 50%;
     background-position: 50%;
     background-size: 100% auto;
-    padding: 0px;
-    margin: 0px;
+    cursor: pointer;
+    margin-bottom: 10px !important;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .button-items-menu-scroll-galery {
@@ -1133,6 +1134,8 @@
     background-repeat: no-repeat !important;
     background-size: 50%;
     background-position: 100% auto;
+    padding: 0px;
+    margin: 0px;
 }
 
 .button-items-menu-scroll-galery:focus {
