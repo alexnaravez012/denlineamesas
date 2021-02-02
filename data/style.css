@@ -1054,3 +1054,87 @@
     border-bottom-left-radius: 15px;
     padding: 20px !important;
 }
+
+.menu-vertical-galery {
+    width: 80px !important;
+    height: 300px !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: white;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    overflow: scroll;
+    overflow-x: hidden!important;
+    margin-left: 280px;
+    position: absolute;
+}
+
+.menu-vertical-galery::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.menu-vertical-galery::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.menu-vertical-galery::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+.menu-vertical-galery::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+.menu-vertical-galery::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+.menu-vertical-galery::-webkit-scrollbar-track {
+    background: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+.menu-vertical-galery::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+.menu-vertical-galery::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+.menu-vertical-galery::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.img-items-menu-scroll-galery {
+    min-width: 60px;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.button-items-menu-scroll-galery {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    height: 90px;
+    width: 90px;
+    background-repeat: no-repeat !important;
+    background-size: 50%;
+    background-position: 100% auto;
+}
+
+.button-items-menu-scroll-galery:focus {
+    outline: 0;
+}
