@@ -13,119 +13,119 @@
 </head>
 
 <body>
-    <!--Navbar-->
-    <div class="uk-flex uk-flex-between navbar-tables">
-        <div class="uk-flex uk-flex-middle">
-            <div uk-toggle="target: .menu-vertical-tables; cls: show" class="padding-horizontal-20">
-                <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-tables; cls: width-menu-vertical-tables"></i>
-            </div>
-            <div>
-                <img src="./data/logo1.png" class="logo-size-tables" alt="">
-            </div>
-        </div>
-        <div class="uk-flex uk-flex-middle">
-            <div class="uk-inline cursor-pointer padding-horizontal-30">
-                <button class="button-data-user-tables uk-flex uk-flex-middle">
-                    <img class="logo-user-size-tables" src="./data/user.png " alt=" ">
-                    <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
-                    <i class="fas fa-caret-down "></i>
-                </button>
-                <div uk-drop="mode: click">
-                    <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-tables">
-                        <div class="padding-vertical-10">
-                            <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
-                            <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
-                        </div>
-                        <div class="hr-tab"></div>
-                        <div class="padding-vertical-10">
-                            <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
-                            <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
-                        </div>
-                        <div class="hr-tab"></div>
-                        <div class="padding-vertical-10">
-                            <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
-                            <h5 class="uk-margin-remove ">94518</h5>
-                        </div>
-                    </div>
+    <!-- Ventana de mesas principal -->
+    <div style="display: none;">
+        <!--Navbar-->
+        <div class="uk-flex uk-flex-between navbar-tables">
+            <div class="uk-flex uk-flex-middle">
+                <div uk-toggle="target: .menu-vertical-tables; cls: show" class="padding-horizontal-20">
+                    <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-tables; cls: width-menu-vertical-tables"></i>
+                </div>
+                <div>
+                    <img src="./data/logo1.png" class="logo-size-tables" alt="">
                 </div>
             </div>
-            <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
-                <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Tienda:</h4>
-                <img class="logo-store-size-tables" src="./data/logo2.png " alt=" ">
-                <i class="fas fa-caret-down"></i>
-            </div>
-        </div>
-    </div>
-    <!--Menu vertical ERP-->
-    <div style="position: relative;">
-        <div class="menu-vertical-tables">
-            <ul class="uk-list" style="padding-bottom: 20px;">
-                <div class="uk-flex uk-flex-between">
-                    <div>
-                        <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
-                        <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
-                    </div>
-                    <div style="padding-right: 10px; padding-top: 4px;">
-                        <div uk-toggle="target: .menu-vertical-tables; cls: show" style="margin-right: 10px;">
-                            <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+            <div class="uk-flex uk-flex-middle">
+                <div class="uk-inline cursor-pointer padding-horizontal-30">
+                    <button class="button-data-user-tables uk-flex uk-flex-middle">
+                        <img class="logo-user-size-tables" src="./data/user.png " alt=" ">
+                        <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                        <i class="fas fa-caret-down "></i>
+                    </button>
+                    <div uk-drop="mode: click">
+                        <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-tables">
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                                <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                                <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                                <h5 class="uk-margin-remove ">94518</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/7.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Inventario</h4>
+                <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
+                    <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Tienda:</h4>
+                    <img class="logo-store-size-tables" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down"></i>
                 </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/8.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Reportes</h4>
-                </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/9.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Tercero</h4>
-                </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/10.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Contabilidad</h4>
-                </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/11.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Pedidos</h4>
-                </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/12.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Crear producto</h4>
-                </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/13.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Opciones de caja</h4>
-                </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Domicilios</h4>
-                </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/15.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15" style="padding-right: 10px;">Administracion de pedidos</h4>
-                </div>
-                <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                    <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
-                    <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Mesas</h4>
-                </div>
-            </ul>
+            </div>
         </div>
-    </div>
-    <div class="main-container-tables">
-        <!--Mesas-->
-        <div style="display: inline;">
+        <!--Menu vertical ERP-->
+        <div style="position: relative;">
+            <div class="menu-vertical-tables">
+                <ul class="uk-list" style="padding-bottom: 20px;">
+                    <div class="uk-flex uk-flex-between">
+                        <div>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                        </div>
+                        <div style="padding-right: 10px; padding-top: 4px;">
+                            <div uk-toggle="target: .menu-vertical-tables; cls: show" style="margin-right: 10px;">
+                                <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/7.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/8.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/9.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/10.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/11.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/12.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/13.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/15.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15" style="padding-right: 10px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Mesas</h4>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container-tables">
             <h5 class="color-blue uk-text-bold padding-horizontal-30" style="padding-top: 20px;">Mesas</h5>
             <div class="uk-child-width-1-5@m uk-grid-small uk-grid-match padding-horizontal-30" uk-grid>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-1">
-                         <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                         <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                         <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                         <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                             <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                             <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                             <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                             <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-1" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -140,11 +140,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-2">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-2" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -159,11 +159,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-3">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-3" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -178,11 +178,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-4">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-4" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -197,11 +197,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-5">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-5" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -216,11 +216,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-6">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-6" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -235,11 +235,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-7">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-7" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -254,11 +254,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-8">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-8" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -273,11 +273,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-9">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-9" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -292,11 +292,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-10">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-10" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -311,11 +311,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-11">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-11" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -330,11 +330,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-12">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-12" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -349,11 +349,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-13">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-13" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -368,11 +368,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-14">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-14" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -387,11 +387,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-15">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-15" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -406,11 +406,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-16">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-16" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -425,11 +425,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-17">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-17" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -444,11 +444,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-18">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-18" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -463,11 +463,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-19">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-19" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -482,11 +482,11 @@
                 </div>
                 <div>
                     <button class="uk-card uk-card-default uk-card-body card-table-tables" uk-toggle="target: #table-20">
-                        <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
-                        <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
-                        <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
-                    </button>
+                            <h5 class="uk-text-bold uk-margin-remove">Mesa 1</h5>
+                            <h6 class="uk-text-bold uk-margin-remove" style="font-weight: 500;">Mesero: Camilo de la cruz</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">$0.00</h6>
+                            <h6 class="uk-margin-remove" style="font-weight: 500;">Minutos: 27 minutos</h6>
+                        </button>
                     <div id="table-20" style="padding-top: 15%;" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body modal-card-tables">
                             <div>
@@ -501,8 +501,112 @@
                 </div>
             </div>
         </div>
-        <!--Mesa seleccionada-->
-        <div style="display: none;">
+    </div>
+    <!-- Luego entra en la interface de la mesa seleccionada -->
+    <div style="display: none;">
+        <!--Navbar-->
+        <div class="uk-flex uk-flex-between navbar-tables">
+            <div class="uk-flex uk-flex-middle">
+                <div uk-toggle="target: .menu-vertical-tables; cls: show" class="padding-horizontal-20">
+                    <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-tables; cls: width-menu-vertical-tables"></i>
+                </div>
+                <div>
+                    <img src="./data/logo1.png" class="logo-size-tables" alt="">
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <div class="uk-inline cursor-pointer padding-horizontal-30">
+                    <button class="button-data-user-tables uk-flex uk-flex-middle">
+                        <img class="logo-user-size-tables" src="./data/user.png " alt=" ">
+                        <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                        <i class="fas fa-caret-down "></i>
+                    </button>
+                    <div uk-drop="mode: click">
+                        <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-tables">
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                                <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                                <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                                <h5 class="uk-margin-remove ">94518</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
+                    <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Tienda:</h4>
+                    <img class="logo-store-size-tables" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+        <!--Menu vertical ERP-->
+        <div style="position: relative;">
+            <div class="menu-vertical-tables">
+                <ul class="uk-list" style="padding-bottom: 20px;">
+                    <div class="uk-flex uk-flex-between">
+                        <div>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                        </div>
+                        <div style="padding-right: 10px; padding-top: 4px;">
+                            <div uk-toggle="target: .menu-vertical-tables; cls: show" style="margin-right: 10px;">
+                                <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/7.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/8.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/9.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/10.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/11.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/12.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/13.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/15.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15" style="padding-right: 10px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Mesas</h4>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container-tables">
+            <!--Mesa seleccionada-->
             <div class="container-open-table">
                 <div class="uk-flex uk-flex-between">
                     <div class="uk-flex uk-flex-middle">
@@ -526,10 +630,10 @@
                                             <div class=" uk-flex uk-flex-center uk-flex-middle" style="margin-top: 10px;">
                                                 <h5 class="uk-margin-remove uk-text-bold" style="padding-right: 10px;">Motivos:</h5>
                                                 <select class="form-select-tables" style="width: 300px !important; ">
-                                                    <option class="select-items-tables" value=" ">Errores</option>
-                                                    <option class="select-items-tables" value=" ">Errores</option>
-                                                    <option class="select-items-tables" value=" ">Errores</option>
-                                                </select>
+                                                <option class="select-items-tables" value=" ">Errores</option>
+                                                <option class="select-items-tables" value=" ">Errores</option>
+                                                <option class="select-items-tables" value=" ">Errores</option>
+                                            </select>
                                             </div>
                                             <div class="uk-flex uk-flex-center" style="padding-top: 20px;">
                                                 <button class="button-card-modal-tables uk-modal-close">Cancelar</button>
@@ -567,8 +671,112 @@
                 </div>
             </div>
         </div>
-        <!--Agregar producto-->
-        <div style="display: none;">
+    </div>
+    <!-- Dandole en agregar producto, se avanza a la página de selección -->
+    <div style="display: none;">
+        <!--Navbar-->
+        <div class="uk-flex uk-flex-between navbar-tables">
+            <div class="uk-flex uk-flex-middle">
+                <div uk-toggle="target: .menu-vertical-tables; cls: show" class="padding-horizontal-20">
+                    <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-tables; cls: width-menu-vertical-tables"></i>
+                </div>
+                <div>
+                    <img src="./data/logo1.png" class="logo-size-tables" alt="">
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <div class="uk-inline cursor-pointer padding-horizontal-30">
+                    <button class="button-data-user-tables uk-flex uk-flex-middle">
+                        <img class="logo-user-size-tables" src="./data/user.png " alt=" ">
+                        <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                        <i class="fas fa-caret-down "></i>
+                    </button>
+                    <div uk-drop="mode: click">
+                        <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-tables">
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                                <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                                <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                                <h5 class="uk-margin-remove ">94518</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
+                    <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Tienda:</h4>
+                    <img class="logo-store-size-tables" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+        <!--Menu vertical ERP-->
+        <div style="position: relative;">
+            <div class="menu-vertical-tables">
+                <ul class="uk-list" style="padding-bottom: 20px;">
+                    <div class="uk-flex uk-flex-between">
+                        <div>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                        </div>
+                        <div style="padding-right: 10px; padding-top: 4px;">
+                            <div uk-toggle="target: .menu-vertical-tables; cls: show" style="margin-right: 10px;">
+                                <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/7.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/8.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/9.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/10.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/11.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/12.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/13.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/15.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15" style="padding-right: 10px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Mesas</h4>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container-tables">
+            <!--Agregar producto-->
             <div class="uk-flex uk-flex-middle uk-flex-wrap search-specific-navbar-tables">
                 <i class="fas fa-caret-left uk-margin-remove color-blue cursor-pointer"></i>
                 <h6 class="color-blue uk-text-bold uk-margin-remove" style="padding-left: 10px;">Añadir pedido</h6>
@@ -676,29 +884,29 @@
             <div class="menu-vertical-categories-tables">
                 <ul class="uk-list">
                     <button class="button-categories-menu-vertical-tables">
-                        <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-08.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Comida</h6>
-                    </button>
+                <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-08.png);" uk-img></div>
+                <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Comida</h6>
+            </button>
                     <button class="button-categories-menu-vertical-tables">
-                        <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-09.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios</h6>
-                    </button>
+                <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-09.png);" uk-img></div>
+                <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios</h6>
+            </button>
                     <button class="button-categories-menu-vertical-tables">
-                        <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-10.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Aceites</h6>
-                    </button>
+                <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-10.png);" uk-img></div>
+                <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Aceites</h6>
+            </button>
                     <button class="button-categories-menu-vertical-tables">
-                        <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-11.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Bicicletas</h6>
-                    </button>
+                <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-11.png);" uk-img></div>
+                <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Bicicletas</h6>
+            </button>
                     <button class="button-categories-menu-vertical-tables">
-                        <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-12.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Motores</h6>
-                    </button>
+                <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-12.png);" uk-img></div>
+                <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Motores</h6>
+            </button>
                     <button class="button-categories-menu-vertical-tables">
-                        <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-14.png);" uk-img></div>
-                        <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios de motocicletas</h6>
-                    </button>
+                <div class="img-categories-menu-vertical-tables uk-align-center uk-margin-remove-bottom" style="background-image: url(./data/1-14.png);" uk-img></div>
+                <h6 class="uk-margin-remove color-blue uk-text-bold" style="font-size: 11px;">Accesorios de motocicletas</h6>
+            </button>
                 </ul>
             </div>
             <div class="main-container-products-selection-tables">
@@ -1362,8 +1570,111 @@
                 </div>
             </div>
         </div>
-        <!--Galeria-->
-        <div style="display: none;">
+    </div>
+    <!--Galeria-->
+    <div style="display: none;">
+        <!--Navbar-->
+        <div class="uk-flex uk-flex-between navbar-tables">
+            <div class="uk-flex uk-flex-middle">
+                <div uk-toggle="target: .menu-vertical-tables; cls: show" class="padding-horizontal-20">
+                    <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-tables; cls: width-menu-vertical-tables"></i>
+                </div>
+                <div>
+                    <img src="./data/logo1.png" class="logo-size-tables" alt="">
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <div class="uk-inline cursor-pointer padding-horizontal-30">
+                    <button class="button-data-user-tables uk-flex uk-flex-middle">
+                            <img class="logo-user-size-tables" src="./data/user.png " alt=" ">
+                            <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                            <i class="fas fa-caret-down "></i>
+                        </button>
+                    <div uk-drop="mode: click">
+                        <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-tables">
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                                <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                                <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                                <h5 class="uk-margin-remove ">94518</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
+                    <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Tienda:</h4>
+                    <img class="logo-store-size-tables" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+        <!--Menu vertical ERP-->
+        <div style="position: relative;">
+            <div class="menu-vertical-tables">
+                <ul class="uk-list" style="padding-bottom: 20px;">
+                    <div class="uk-flex uk-flex-between">
+                        <div>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                        </div>
+                        <div style="padding-right: 10px; padding-top: 4px;">
+                            <div uk-toggle="target: .menu-vertical-tables; cls: show" style="margin-right: 10px;">
+                                <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/7.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/8.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/9.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/10.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/11.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/12.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/13.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/15.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15" style="padding-right: 10px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Mesas</h4>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container-tables">
             <div class="uk-flex uk-flex-between uk-flex-wrap" style="margin-top: 30px;">
                 <div class="uk-flex uk-width-1-5" style="margin-left: 180px;">
                     <div style="padding-left: 10px; padding-top: 5px;">
@@ -1449,7 +1760,7 @@
                 </div>
                 <div class="uk-width-1-5">
                     <ul class="uk-list">
-                        <h5 class="uk-margon remove uk-text-bold ">Productos relacionados con este artículo</h5>
+                        <h5 class="uk-margin-remove uk-text-bold ">Productos relacionados con este artículo</h5>
                         <div class="uk-flex uk-flex-middle ">
                             <div class="img-related-posts-tables uk-margin-remove-bottom " style="background-image: url(./data/burguer.png); " uk-img></div>
                             <h6 class="uk-margin-remove" style="padding-left: 30px; ">Hamburguesa 2</h6>
@@ -1479,8 +1790,111 @@
                 </div>
             </div>
         </div>
-        <!--Estado de orden-->
-        <div style="display: none;">
+    </div>
+    <!--Estado de orden-->
+    <div style="display: inline;">
+        <!--Navbar-->
+        <div class="uk-flex uk-flex-between navbar-tables">
+            <div class="uk-flex uk-flex-middle">
+                <div uk-toggle="target: .menu-vertical-tables; cls: show" class="padding-horizontal-20">
+                    <i class="fas fa-bars font-size-20 color-blue cursor-pointer" style="margin-left: 10px;" uk-toggle="target: .main-container-tables; cls: width-menu-vertical-tables"></i>
+                </div>
+                <div>
+                    <img src="./data/logo1.png" class="logo-size-tables" alt="">
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <div class="uk-inline cursor-pointer padding-horizontal-30">
+                    <button class="button-data-user-tables uk-flex uk-flex-middle">
+                        <img class="logo-user-size-tables" src="./data/user.png " alt=" ">
+                        <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Mireya Mopan</h4>
+                        <i class="fas fa-caret-down "></i>
+                    </button>
+                    <div uk-drop="mode: click">
+                        <div class="uk-card uk-card-body uk-card-default uk-box-shadow-large drop-data-user-tables">
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Roles activados:</h5>
+                                <h5 class="uk-margin-remove ">Propietario de la empresa</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove ">Su documento es:</h5>
+                                <h5 class="uk-margin-remove ">CC: 55555555555001</h5>
+                            </div>
+                            <div class="hr-tab"></div>
+                            <div class="padding-vertical-10">
+                                <h5 class="uk-text-bold uk-margin-remove">Id de usuario:</h5>
+                                <h5 class="uk-margin-remove ">94518</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursor-pointer uk-flex uk-flex-middle padding-horizontal-20">
+                    <h4 class="uk-text-bold uk-margin-remove" style="padding-right: 5px;">Tienda:</h4>
+                    <img class="logo-store-size-tables" src="./data/logo2.png " alt=" ">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+        <!--Menu vertical ERP-->
+        <div style="position: relative;">
+            <div class="menu-vertical-tables">
+                <ul class="uk-list" style="padding-bottom: 20px;">
+                    <div class="uk-flex uk-flex-between">
+                        <div>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
+                            <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
+                        </div>
+                        <div style="padding-right: 10px; padding-top: 4px;">
+                            <div uk-toggle="target: .menu-vertical-tables; cls: show" style="margin-right: 10px;">
+                                <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/7.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Inventario</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/8.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Reportes</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/9.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Tercero</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/10.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Contabilidad</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/11.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/12.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Crear producto</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/13.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Opciones de caja</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Domicilios</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/15.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15" style="padding-right: 10px;">Administracion de pedidos</h4>
+                    </div>
+                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Mesas</h4>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main-container-tables">
             <div class="container-open-table-order-status">
                 <div class="uk-flex uk-flex-between">
                     <div class="uk-flex uk-flex-middle">
