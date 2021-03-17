@@ -12,7 +12,7 @@
     top: 80px;
     padding-top: 20px;
     padding-left: 20px;
-    width: 230px !important;
+    width: 200px !important;
     box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
     height: calc(100% - 80px) !important;
     position: fixed;
@@ -84,19 +84,21 @@
 }
 
 .items-menu-vertical-tables {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    margin: 5px !important;
+    height: 45px;
+    width: 200px;
+    padding-left: 15px;
 }
 
 .items-menu-vertical-tables:hover {
-    background-color: rgb(167, 238, 167);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: #B1FFA6;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .img-menu-vertical-size-tables {
-    height: 45px;
-    width: 50px;
+    height: 40px;
+    width: 45px;
 }
 
 .card-table-tables {
@@ -346,7 +348,7 @@
     top: 80px;
     padding-top: 10px;
     width: 100px !important;
-    height: calc(100% - 140px) !important;
+    height: calc(100% - 80px) !important;
     position: fixed;
     z-index: 30 !important;
     overflow-y: scroll;

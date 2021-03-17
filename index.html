@@ -14,7 +14,7 @@
 
 <body>
     <!-- Ventana de mesas principal -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!--Navbar-->
         <div class="uk-flex uk-flex-between navbar-tables">
             <div class="uk-flex uk-flex-middle">
@@ -673,7 +673,7 @@
         </div>
     </div>
     <!-- Dandole en agregar producto, se avanza a la página de selección -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!--Navbar-->
         <div class="uk-flex uk-flex-between navbar-tables">
             <div class="uk-flex uk-flex-middle">
@@ -722,55 +722,57 @@
             <div class="menu-vertical-tables">
                 <ul class="uk-list" style="padding-bottom: 20px;">
                     <div class="uk-flex uk-flex-between">
-                        <div>
+                        <div style="margin-left: 25px;">
                             <h4 class="uk-margin-remove color-blue uk-text-bold">ERP</h4>
                             <h4 class="uk-margin-remove color-blue uk-text-bold">Dashboard</h4>
                         </div>
-                        <div style="padding-right: 10px; padding-top: 4px;">
+                        <div style="padding-right: 5px;">
                             <div uk-toggle="target: .menu-vertical-tables; cls: show" style="margin-right: 10px;">
                                 <i class=" fas fa-times font-size-17 color-blue cursor-pointer"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/7.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Inventario</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/8.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Reportes</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/9.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Tercero</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/10.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Contabilidad</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/11.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Pedidos</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/12.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Crear producto</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/13.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Opciones de caja</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Domicilios</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/15.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15" style="padding-right: 10px;">Administracion de pedidos</h4>
-                    </div>
-                    <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
-                        <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
-                        <h4 class="uk-margin-remove color-blue uk-text-bold font-size-15">Mesas</h4>
+                    <div style="margin-left: 5px;">
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/7.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Inventario</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/8.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Reportes</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/9.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Tercero</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/10.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Contabilidad</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/11.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Pedidos</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/12.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Crear producto</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/13.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Opciones de caja</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Domicilios</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/15.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12" style="width: 100px;">Administracion de pedidos</h4>
+                        </div>
+                        <div class="uk-flex uk-flex-middle cursor-pointer items-menu-vertical-tables">
+                            <img class="img-menu-vertical-size-tables" src="./data/14.png" alt="">
+                            <h4 class="uk-margin-remove color-blue uk-text-bold font-size-12">Mesas</h4>
+                        </div>
                     </div>
                 </ul>
             </div>
