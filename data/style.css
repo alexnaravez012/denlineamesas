@@ -74,8 +74,8 @@
 }
 
 .logo-store-size-tables {
-    height: 50px;
-    width: 100px;
+    height: 60px;
+    width: 120px;
     margin-right: 5px;
 }
 
@@ -99,6 +99,7 @@
 .img-menu-vertical-size-tables {
     height: 40px;
     width: 45px;
+    margin-right: 10px;
 }
 
 .card-table-tables {
