@@ -871,7 +871,7 @@
 
 .main-modal-container-tables {
     width: 100% !important;
-    height: 500px;
+    height: 100%;
     z-index: 1;
     position: fixed;
     padding-bottom: 20px;
@@ -887,13 +887,13 @@
 
 .modal-search-specific-navbar-tables {
     border-bottom: 1px solid rgb(212, 212, 212);
-    width: 1098px;
+    width: 100%;
     position: fixed;
     background-color: #fff;
     z-index: 10;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 135px;
+    padding-left: 160px;
 }
 
 .modal-search-specific-navbar-tables::-webkit-scrollbar {
@@ -903,12 +903,11 @@
 .modal-menu-vertical-categories-tables {
     padding-top: 10px;
     width: 100px !important;
-    height: 515px;
+    height: 100%;
     position: fixed;
     z-index: 30 !important;
     overflow-y: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none;
     box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
     background-color: white;
 }
@@ -918,40 +917,15 @@
 }
 
 .modal-main-container-products-selection-tables {
-    padding-left: 150px;
+    padding-left: 185px;
     padding-top: 80px;
     padding-bottom: 45px;
     overflow: auto;
     -ms-overflow-style: none;
-    scrollbar-width: none;
-    height: 580px;
-}
-
-.modal-main-container-products-selection-tables::-webkit-scrollbar {
-    display: none;
 }
 
 .modal-menu-right-vertical-tables {
-    top: 55px;
-    padding-top: 20px;
-    left: calc(100% - 185px);
-    width: 200px !important;
-    height: calc(100% - 150px) !important;
-    position: fixed;
-    z-index: 100;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-@media screen and (max-width:890px) {
-    .modal-menu-right-vertical-tables {
-        display: none;
-    }
-}
-
-.modal-menu-right-vertical-tables::-webkit-scrollbar {
-    display: none;
+    padding-right: 30px !important;
 }
 
 .modal-info-float-select-products-tables {
