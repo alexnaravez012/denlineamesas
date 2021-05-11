@@ -399,7 +399,6 @@
     padding-left: 190px;
     padding-top: 90px;
     padding-bottom: 45px;
-    padding-right: 180px;
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -851,4 +850,113 @@
 
 .button-items-menu-categories-tables:hover {
     background-color: #B1FFA6;
+}
+
+
+/* new modal */
+
+.modal-selection-products {
+    padding: 0px !important;
+    width: 1320px !important;
+    height: 525px;
+}
+
+.modal-selection-products::-webkit-scrollbar {
+    display: none;
+}
+
+.main-modal-container-tables {
+    width: 100% !important;
+    height: 500px;
+    z-index: 1;
+    position: fixed;
+    padding-bottom: 20px;
+    position: relative;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main-modal-container-tables::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-search-specific-navbar-tables {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    width: 1098px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 135px;
+}
+
+.modal-search-specific-navbar-tables::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-menu-vertical-categories-tables {
+    padding-top: 10px;
+    width: 100px !important;
+    height: 515px;
+    position: fixed;
+    z-index: 30 !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    background-color: white;
+}
+
+.modal-menu-vertical-categories-tables::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-main-container-products-selection-tables {
+    padding-left: 150px;
+    padding-top: 80px;
+    padding-bottom: 45px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 580px;
+}
+
+.modal-main-container-products-selection-tables::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-menu-right-vertical-tables {
+    top: 55px;
+    padding-top: 20px;
+    left: calc(100% - 185px);
+    width: 200px !important;
+    height: calc(100% - 150px) !important;
+    position: fixed;
+    z-index: 100;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media screen and (max-width:890px) {
+    .modal-menu-right-vertical-tables {
+        display: none;
+    }
+}
+
+.modal-menu-right-vertical-tables::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-info-float-select-products-tables {
+    background-color: #B1FFA6;
+    border-radius: 10px;
+    padding: 10px;
+    top: calc(100% - 80px) !important;
+    position: fixed !important;
+    width: 150px !important;
+    left: calc(50% - 75px) !important;
+    cursor: pointer;
 }
