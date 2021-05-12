@@ -872,13 +872,9 @@
 .main-modal-container-tables {
     width: 100% !important;
     height: 100%;
-    z-index: 1;
-    position: fixed;
     padding-bottom: 20px;
-    position: relative;
     overflow-y: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 .main-modal-container-tables::-webkit-scrollbar {
@@ -889,11 +885,11 @@
     border-bottom: 1px solid rgb(212, 212, 212);
     width: 100%;
     position: fixed;
-    background-color: #fff;
-    z-index: 10;
+    z-index: 1;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 160px;
+    margin: 0px !important;
 }
 
 .modal-search-specific-navbar-tables::-webkit-scrollbar {
@@ -905,11 +901,11 @@
     width: 100px !important;
     height: 100%;
     position: fixed;
-    z-index: 30 !important;
+    z-index: 2 !important;
     overflow-y: scroll;
     -ms-overflow-style: none;
     box-shadow: 6px 0px 5px 0px rgba(0, 0, 0, 0.20);
-    background-color: white;
+    margin: 0px !important;
 }
 
 .modal-menu-vertical-categories-tables::-webkit-scrollbar {
@@ -932,9 +928,48 @@
     background-color: #B1FFA6;
     border-radius: 10px;
     padding: 10px;
-    top: calc(100% - 80px) !important;
+    bottom: 60px;
     position: fixed !important;
     width: 150px !important;
     left: calc(50% - 75px) !important;
+    cursor: pointer;
+}
+
+.modal-text-img-bag-navbar-tables {
+    color: #3a6193;
+    left: 25px;
+}
+
+.modal-card-products-add-tables {
+    width: 210px !important;
+    min-width: 210px !important;
+    height: 140px !important;
+    border: 1px rgba(0, 0, 255, 0.37) solid;
+    border-radius: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+    margin-right: 30px !important;
+}
+
+.modal-button-discount-card-tables {
+    border-radius: 10px;
+    background-color: rgb(0, 0, 102);
+    color: white;
+    width: 50px !important;
+    text-align: center;
+    bottom: 105px;
+    right: 170px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 12px;
+}
+
+.modal-like-size-card-tables {
+    height: 40px;
+    width: 40px;
+    left: 190px;
+    top: 110px;
     cursor: pointer;
 }
