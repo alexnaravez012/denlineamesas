@@ -890,6 +890,7 @@
     padding-bottom: 5px;
     padding-left: 160px;
     margin: 0px !important;
+    background-color: white;
 }
 
 .modal-search-specific-navbar-tables::-webkit-scrollbar {
@@ -897,7 +898,6 @@
 }
 
 .modal-menu-vertical-categories-tables {
-    padding-top: 10px;
     width: 100px !important;
     height: 100%;
     position: fixed;
